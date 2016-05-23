@@ -1,4 +1,4 @@
-var mexico = [{
+var dataMexico = [{
               imagen: "Alma.JPG",
               name: "Alma"
             },{

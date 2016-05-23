@@ -1,4 +1,4 @@
-var peru =  [{
+var dataPeru =  [{
               image:"Ana Paula Verme.jpg",
               name:"Ana"
             },{
@@ -8,7 +8,7 @@ var peru =  [{
               image:"Antonella Gutierrez.jpg",
               name:"Antonella" 
             },{
-              image:"Karen Valdivia.JPG",
+              image:"Karen.JPG",
               name:"Karen"
             },{
               image:"Astrid Cordova.jpg",
@@ -29,7 +29,7 @@ var peru =  [{
               image:"Gabriela Segura.jpg",
               name:"Gabriela"
             },{
-              image:"Genesis Leon.jpg", 
+              image:"Genesis.jpg", 
               name:"Genesis"
             },{
               image:"Ingrid Dariana Patiño.jpg",
@@ -41,7 +41,7 @@ var peru =  [{
               image:"Jenny Vega.JPG",
               name:"Jenny"
             },{
-              image:"Jesenia Rodríguez.JPG",
+              image:"Jesenia.JPG",
               name:"Jesenia"
             },{
               image:"Johana Azañero.JPG",
@@ -92,7 +92,7 @@ var peru =  [{
               image:"Nayra Pillihuaman.jpg",
               name:"Nayra"
             },{
-              image:"Patricia Arakawa.JPG",
+              image:"Patricia.JPG",
               name:"Patricia"
             },{
               image:"Reina Torrejón.JPG",

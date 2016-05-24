@@ -32,3 +32,8 @@ section {
 	background-position: center center;
 	background-size: cover;
 }
+
+#textOk {
+	color: red;
+	font-size: 3em;
+}

@@ -1,14 +1,12 @@
-
 $(document).ready(function() {
 	var randomPeru,
-		randomMexico;
-	
+		randomMexico,
+		valSedes;
 	var puntaje = 0;
-	// var textOk = $("#textOk").html();
 
 	// RANDOM DE FOTOS
 	$(".sedes").change(function() {
-		var valSedes = $('.sedes').val();
+		valSedes = $(this).val();
 		randomPeru = Math.floor(Math.random() * dataPeru.length);
 		randomMexico = Math.floor(Math.random() * dataMexico.length);
 
@@ -22,18 +20,24 @@ $(document).ready(function() {
 	$("#btnComprobar").click(function(){
 		var coderName = $("#boxNombre").val();
 		if(dataPeru[randomPeru].name==coderName||dataMexico[randomMexico].name==coderName){
+			randomPeru = Math.floor(Math.random() * dataPeru.length);
+			randomMexico = Math.floor(Math.random() * dataMexico.length);
 			puntaje += 5;
+			$("#textOk").show();
 			$("#puntos").html(puntaje);
-			var textOk = $("#textOk").html("BIEN!!!!");
-			$("#textOk").fadeOut( "slow", function() {
-			});
-			// $("#textOk").fadeOut( "slow", function() {
-			// 	var textOk = $("#textOk").html("BIEN!!!!");
-			// });
+			$("#textOk").html("BIEN!!!!").fadeOut(1000);
+			if(valSedes=="valPeru") {
+				$('.imgFoto').css({'background-image': "url('fotos/peru/" +  dataPeru[randomPeru].image + "')"});
+			} else if (valSedes=="valMexico") {
+				$('.imgFoto').css({'background-image': "url('fotos/mexico/" +  dataMexico[randomMexico].image + "')"});
+			}
+			$("#boxNombre").val("");
 		} else{
 			puntaje += -1;
+			$("#textOk").show();
 			$("#puntos").html(puntaje);
+			$("#textOk").html("MAL :(").fadeOut(1000);
+			$("#boxNombre").val("");
 		}
 	});
-
 });

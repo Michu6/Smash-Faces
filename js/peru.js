@@ -38,9 +38,6 @@ var dataPeru =  [{
               image:"Janet Huacahuasi.jpg",
               name:"Janet"
             },{
-              image:"Jenny Vega.JPG",
-              name:"Jenny"
-            },{
               image:"Jesenia.JPG",
               name:"Jesenia"
             },{
@@ -68,7 +65,7 @@ var dataPeru =  [{
               image:"Lisbeth Balabarca.JPG",
               name:"Lisbeth"
             },{
-              image:"Lizeth Lopez.JPG",
+              image:"Lizeth.JPG",
               name:"Lizeth"
             },{
               image:"Magaly Flores.jpg",
